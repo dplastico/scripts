@@ -1,2 +1,2 @@
 # scripts
-scripts for stuffs
+Scripts made by myself for pentests, CTFs, etc
