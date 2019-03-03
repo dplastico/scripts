@@ -8,13 +8,13 @@ def connScan(tgtHost, tgtPort):
     try:
         connSkt = socket(AF_INET, SOCK_STREAM)
         connSkt.connect((tgtHost, tgtPort))
-        ConnSkt.send('dplastico\r\n')
+        connSkt.send('dplastico\r\n')
         results = connSkt.recv(100)
         screenLock.acquire()
         print '[+]%d/tcp open'%tgtPort
         print '[+] '+ str(results) 
         connSkt.close()
-    except:
+    except Exception as e:
         screenLock.acquire()
         print '[-]%d/tcp closed'%tgtPort
     finally:
@@ -38,7 +38,7 @@ def portScan(tgtHost, tgtPorts):
         t = Thread(target = connScan, args=(tgtHost, int(tgtPort)))
         t.start()
         print 'Scaning port '+ tgtPort
-        connScan(tgtHost, int(tgtPort))
+        #connScan(tgtHost, int(tgtPort))
         
 
 def main():
