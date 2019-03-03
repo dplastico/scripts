@@ -48,7 +48,7 @@ def main():
     parser.add_option('-H', dest='tgtHost', type='string', \
     help = 'specify target host')
 
-    parser.add_option('-p', dest='tgtPort', type='int', \
+    parser.add_option('-p', dest='tgtPort', type='string', \
     help = 'specify target port[s] separated by comma')
 
     (options, args) = parser.parse_args()
