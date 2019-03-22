@@ -3,7 +3,7 @@ import optparse
 
 def nmapScan (tgtHost, tgtPort):
     nmScan = nmap.PortScanner()
-    nmScan.Scan(tgtHost, tgtPort)
+    nmScan.scan(tgtHost, tgtPort)
     state = nmScan[tgtHost]['tcp'][int(tgtPort)]['state']
     print "[*]" + tgtHost + "tcp/"+tgtPort+""+state
 def main():
