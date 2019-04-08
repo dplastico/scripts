@@ -1,0 +1,14 @@
+# Nmap 7.70 scan initiated Sun Apr  7 20:25:00 2019 as: nmap -oX - -p 80 -sV -sC -oN output 10.10.10.130
+Nmap scan report for 10.10.10.130
+Host is up (0.17s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  7 20:25:10 2019 -- 1 IP address (1 host up) scanned in 10.66 seconds
