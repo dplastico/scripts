@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-import pyPdf2
+import PyPDF2
 import optparse
-from pyPdf2 import PdfFileReader
+from PyPDF2 import PdfFileReader
 
 def printMeta(fileName):
     pdfFile = PdfFileReader(file(fileName, 'rb'))
@@ -14,7 +14,7 @@ def printMeta(fileName):
 
 def main():
     parser = optparse.OptionParser('USage: %prog "+\" -f <pdf file name>')
-    parser.add_option("-f", "--file", dest=fileName, help="specify a PDF to get the metadata from")
+    parser.add_option("-f", "--file", dest='fileName', help="specify a PDF to get the metadata from")
     (options, args) = parser.parse_args()
     fileName = options.fileName
     if fileName == None:
@@ -22,5 +22,5 @@ def main():
          exit(0)
     else:
         printMeta(fileName)
-if __NAME__ == '__main__':
+if __name__ == '__main__':
     main()

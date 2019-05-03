@@ -1,0 +1,22 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 192.168.1.182
++ Target Port: 80
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ OSVDB-3268: GET /: Directory indexing found.
++ HEAD Apache/2.4.34 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ OPTIONS Allowed HTTP Methods: HEAD, GET, POST, OPTIONS 
++ OSVDB-3268: GET /./: Directory indexing found.
++ GET /./: Appending '/./' to a directory allows indexing
++ OSVDB-3268: GET //: Directory indexing found.
++ GET //: Apache on Red Hat Linux release 9 reveals the root directory listing by default if there is no index page.
++ OSVDB-3268: GET /%2e/: Directory indexing found.
++ OSVDB-576: GET /%2e/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513.
++ OSVDB-3268: GET ///: Directory indexing found.
++ OSVDB-119: GET /?PageServices: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
++ OSVDB-119: GET /?wp-cs-dump: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
++ OSVDB-3092: GET /test/: This might be interesting...
++ OSVDB-3268: GET ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Directory indexing found.
++ OSVDB-3288: GET ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Abyss 1.03 reveals directory listing when 	 /'s are requested.
++ OSVDB-3233: GET /icons/README: Apache default file found.

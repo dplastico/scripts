@@ -1,0 +1,21 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: 192.168.1.182hola1.txt
+START_TIME: Fri May  3 14:24:06 2019
+URL_BASE: http://192.168.1.182/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://192.168.1.182/ ----
++ http://192.168.1.182/server-status (CODE:403|SIZE:301)
+==> DIRECTORY: http://192.168.1.182/test/
+
+---- Entering directory: http://192.168.1.182/test/ ----
++ http://192.168.1.182/test/index.html (CODE:200|SIZE:1467)
